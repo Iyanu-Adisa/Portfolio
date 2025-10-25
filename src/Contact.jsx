@@ -18,7 +18,7 @@ export default function Contact() {
       setStatus({
         loading: false,
         ok: false,
-        msg: "Email service is not configured. Make sure environment variables are set (service, template, public key).",
+        msg: "Email service is not configured properly.",
       });
       return;
     }
@@ -28,7 +28,7 @@ export default function Contact() {
         setStatus({
           loading: false,
           ok: true,
-          msg: "Message sent — thank you!",
+          msg: "✅ Message sent successfully!",
         });
         form.current.reset();
       })
@@ -37,28 +37,26 @@ export default function Contact() {
         setStatus({
           loading: false,
           ok: false,
-          msg: "Failed to send message. Try again or contact me directly.",
+          msg: "❌ Failed to send message. Please try again.",
         });
       });
   };
 
   return (
     <section className="contact" id="contact">
+      <div className="contact-overlay"></div>
       <div className="contact-container">
-        <h1 className="contact-title">
-          Let’s <span>Connect</span>
-        </h1>
-        <p className="contact-desc">
-          I’m open to new projects and opportunities. Send a quick message below
-          and I’ll get back to you.
-        </p>
+        <div className="contact-info">
+          <h1 className="contact-title">
+            Let’s <span>Connect</span>
+          </h1>
+          <p className="contact-desc">
+            I’m open to collaborations, freelance work, or full-time roles. Feel
+            free to reach out — I’ll reply as soon as possible.
+          </p>
+        </div>
 
-        <form
-          ref={form}
-          onSubmit={onSubmit}
-          className="contact-form"
-          aria-label="Contact form"
-        >
+        <form ref={form} onSubmit={onSubmit} className="contact-form">
           <input
             type="text"
             name="user_name"
@@ -85,35 +83,13 @@ export default function Contact() {
           >
             {status.loading ? "Sending..." : "Send Message"}
           </button>
+
+          {status.msg && (
+            <p className={`contact-status ${status.ok ? "ok" : "error"}`}>
+              {status.msg}
+            </p>
+          )}
         </form>
-
-        {status.msg && (
-          <p className={`contact-status ${status.ok ? "ok" : "error"}`}>
-            {status.msg}
-          </p>
-        )}
-
-        <div className="contact-icons">
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/your-linkedin"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin />
-          </a>
-          <a href="adisaiyanuakorede@gmail.com" aria-label="Email">
-            <FaEnvelope />
-          </a>
-        </div>
       </div>
     </section>
   );
