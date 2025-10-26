@@ -11,19 +11,14 @@ export default function Footer() {
 
         <div className="footer-icons">
           <a
-            href="https://github.com/"
+            href="https://github.com/Iyanu-Adisa"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
           >
             <FaGithub />
           </a>
-          <a
-            href="https://linkedin.com/in/your-linkedin"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-          >
+          <a href="" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
           <a href="mailto:adisaiyanuakorede@gmail.com" aria-label="Email">
