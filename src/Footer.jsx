@@ -18,7 +18,12 @@ export default function Footer() {
           >
             <FaGithub />
           </a>
-          <a href="" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/adisa-iyanu-09b513390/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <FaLinkedin />
           </a>
           <a href="mailto:adisaiyanuakorede@gmail.com" aria-label="Email">
