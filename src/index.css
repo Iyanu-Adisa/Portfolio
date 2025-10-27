@@ -218,7 +218,7 @@ body {
   }
 }
 
-/* ===== ABOUT SECTION ===== */
+/* ABOUT SECTION */
 .about {
   min-height: 100vh;
   background: #0a0a0a;
@@ -276,7 +276,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 230, 184, 0.5);
 }
 
-/* 🎯 Tools & Technologies Section */
 .skills {
   margin-top: 3rem;
 }
@@ -314,7 +313,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 230, 184, 0.4);
 }
 
-/* 🎨 Individual Icon Colors */
 .tech-icon.figma {
   color: #f24e1e;
 }
@@ -335,7 +333,6 @@ body {
   color: #61dafb;
 }
 
-/* ✨ Smooth Fade-In Animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -356,7 +353,6 @@ body {
   animation-delay: 0.4s;
 }
 
-/* 💫 Subtle Pulse on Skill Hover */
 @keyframes pulseGlow {
   0% {
     box-shadow: 0 0 0 rgba(0, 230, 184, 0.2);
@@ -375,7 +371,6 @@ body {
   animation: pulseGlow 1s ease;
 }
 
-/* 📱 Responsive */
 @media (max-width: 768px) {
   .about-title {
     font-size: 2.2rem;
@@ -386,7 +381,7 @@ body {
   }
 }
 
-/* ===== PROJECTS SECTION (with images) ===== */
+/* PROJECTS */
 .projects {
   padding: 80px 10%;
   background: #0a0a0a;
@@ -443,7 +438,6 @@ body {
   color: #fff;
 }
 
-/* 🧠 Tech Icons */
 .tech-logos {
   display: flex;
   flex-wrap: wrap;
@@ -462,7 +456,6 @@ body {
   filter: brightness(1.3);
 }
 
-/* 🎨 Individual Icon Colors (Projects Section) */
 .project-tech-icon.react {
   color: #61dafb;
 }
@@ -487,7 +480,6 @@ body {
   color: #ccc;
 }
 
-/* 🖼️ Gallery Section */
 .project-gallery {
   flex: 1;
   display: grid;
@@ -539,7 +531,6 @@ body {
   transform: translateY(0);
 }
 
-/* 🔗 Buttons */
 .project-links {
   margin-top: 2rem;
   display: flex;
@@ -605,7 +596,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 230, 184, 0.3);
 }
 
-/* 🧾 View Code Button (no glow, just lift) */
 .project-btn-outline {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -615,7 +605,6 @@ body {
   box-shadow: none;
 }
 
-/* 📱 Responsive */
 @media (max-width: 900px) {
   .project-detail {
     flex-direction: column;
@@ -698,7 +687,7 @@ body {
   }
 }
 
-/* ===== Main Layout ===== */
+/* CONTACT */
 .contact-container {
   position: relative;
   z-index: 1;
@@ -735,7 +724,6 @@ body {
   max-width: 400px;
 }
 
-/* 📨 Form Styles */
 .contact-form {
   flex: 1;
   min-width: 300px;
@@ -763,7 +751,6 @@ body {
   outline: none;
 }
 
-/* ✉️ Send Button */
 .contact-btn {
   align-self: flex-start;
   background: linear-gradient(90deg, #7f00ff, #00e6b8);
@@ -781,7 +768,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 230, 184, 0.4);
 }
 
-/* ✅ Status message */
 .contact-status {
   margin-top: 1rem;
   font-weight: 500;
@@ -795,7 +781,6 @@ body {
   color: #ff5b5b;
 }
 
-/* 📱 Responsive */
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
@@ -868,7 +853,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* 📱 Responsive */
 @media (max-width: 600px) {
   .footer {
     padding: 2rem 5%;
