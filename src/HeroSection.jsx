@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function HeroSection() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">

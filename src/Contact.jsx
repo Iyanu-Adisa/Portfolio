@@ -28,7 +28,7 @@ export default function Contact() {
         setStatus({
           loading: false,
           ok: true,
-          msg: "✅ Message sent successfully!",
+          msg: "Message sent successfully!",
         });
         form.current.reset();
       })
@@ -37,7 +37,7 @@ export default function Contact() {
         setStatus({
           loading: false,
           ok: false,
-          msg: "❌ Failed to send message. Please try again.",
+          msg: "Failed to send message. Please try again.",
         });
       });
   };

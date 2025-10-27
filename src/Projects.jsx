@@ -22,7 +22,6 @@ function Projects() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* TEXT SECTION */}
           <div className="project-text">
             <h2 className="project-name">MovieBox</h2>
             <p className="project-tagline">
@@ -59,7 +58,6 @@ function Projects() {
             </motion.div>
           </div>
 
-          {/* GALLERY SECTION */}
           <motion.div
             className="project-gallery"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -83,7 +81,6 @@ function Projects() {
             ))}
           </motion.div>
 
-          {/* BUTTONS */}
           <motion.div
             className="project-links"
             initial={{ opacity: 0 }}
