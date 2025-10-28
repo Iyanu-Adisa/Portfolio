@@ -1,5 +1,5 @@
-import { FaReact, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { SiJavascript, SiFramer, SiVercel } from "react-icons/si";
+import { FaReact, FaCss3Alt, FaGithub, FaFigma } from "react-icons/fa";
+import { SiJavascript, SiVercel } from "react-icons/si";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -49,10 +49,7 @@ function Projects() {
                 className="project-tech-icon js"
               />
               <FaCss3Alt title="CSS3" className="project-tech-icon css" />
-              <SiFramer
-                title="Framer Motion"
-                className="project-tech-icon framer"
-              />
+              <FaFigma title="Figma" className="project-tech-icon figma" />
               <FaGithub title="GitHub" className="project-tech-icon github" />
               <SiVercel title="Vercel" className="project-tech-icon vercel" />
             </motion.div>

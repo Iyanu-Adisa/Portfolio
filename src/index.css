@@ -10,11 +10,18 @@ body {
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #root {
   height: 100%;
   width: 100%;
+}
+
+section,
+div {
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 /* HEADER */
@@ -586,8 +593,8 @@ body {
   color: #2965f1;
 }
 
-.project-tech-icon.framer {
-  color: #e63eec;
+.project-tech-icon.figma {
+  color: #f24e1e;
 }
 
 .project-tech-icon.github {
@@ -770,7 +777,6 @@ body {
   overflow: hidden;
 }
 
-/* 🌈 Gradient Circles (like hero section) */
 .contact::before,
 .contact::after {
   content: "";
@@ -974,5 +980,168 @@ body {
 @media (max-width: 600px) {
   .footer {
     padding: 2rem 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    max-width: 100%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .header {
+    padding: 0.7rem 1rem;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+  }
+
+  .hero-btn,
+  .hero-btn-outline {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .skills-title {
+    font-size: 1.1rem;
+  }
+
+  .tech-logos {
+    gap: 1.2rem;
+  }
+
+  .tech-icon {
+    font-size: 2.4rem;
+  }
+
+  .projects {
+    padding: 60px 1rem;
+  }
+
+  .projects-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-text {
+    min-width: auto;
+  }
+
+  .project-name {
+    font-size: 1.3rem;
+  }
+
+  .project-overview {
+    font-size: 0.9rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-btn,
+  .project-btn-outline {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    padding: 4rem 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  .footer-icons {
+    gap: 1rem;
+  }
+
+  .footer-icons a {
+    font-size: 1.2rem;
   }
 }
