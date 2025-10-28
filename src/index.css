@@ -20,7 +20,6 @@ body {
 
 section,
 div {
-  max-width: 100%;
   word-wrap: break-word;
 }
 
@@ -742,6 +741,7 @@ div {
 
   .tech-logos {
     justify-content: center;
+    font-size: 3rem;
   }
 
   .project-gallery {
@@ -1021,20 +1021,6 @@ div {
     padding: 0;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.7rem;
-  }
-
-  .hero-btn,
-  .hero-btn-outline {
-    width: 100%;
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 0.8rem;
-  }
-
   .about {
     padding: 4rem 1rem;
   }
@@ -1057,7 +1043,7 @@ div {
   }
 
   .tech-icon {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .projects {
@@ -1089,12 +1075,6 @@ div {
 
   .project-gallery {
     grid-template-columns: 1fr;
-  }
-
-  .project-btn,
-  .project-btn-outline {
-    width: 100%;
-    font-size: 0.9rem;
   }
 
   .contact {
